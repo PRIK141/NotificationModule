@@ -1,0 +1,59 @@
+.container {
+  font-size: 14px;
+  position: fixed;
+  z-index: 10;
+}
+
+.buttom-right {
+  bottom: 1rem;
+  right: 1rem;
+  animation: notification-in-right .7s;
+}
+
+.notification {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #999;
+  color: #000;
+  opacity: 0.9;
+  transition: .3s ease;
+}
+
+.notification:hover {
+  border: 1px solid black;
+  box-shadow: 0 0 12px #fff;
+  opacity: 1;
+}
+
+.notification {
+  width: 365px;
+  color: #fff;
+  padding: 20px 15px 5px 15px;
+}
+
+.container button {
+  float: right;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.description {
+  font-weight: 00;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 0;  
+  width: 300px;
+}
+
+
+
+@keyframes notification-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
